@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  background-color: #0B2434;
+  font-family: Karla, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1 / 1;
+  width: 85%;
+  max-width: 800px;
+  max-height: 800px;
+  background-color: #F5F5F5;
+  border-radius: 20px;
+  box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.25);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dice {
+  display: grid;
+  grid: auto auto / repeat(5, 1fr);
+  gap: 35px;
+}
+
+.die {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 25%);
+  cursor: pointer;
+  user-select: none;
+}
+
+.die--number {
+  font-weight: bold;
+  font-size: 3rem;
+  /* color: #2B283A; */
+}
+
+
+.roll-btn {
+  margin-bottom: 40px;
+  padding: 12px 60px 12px 60px;
+  font-family: Karla, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  background-color: #5035FF;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+
+.roll-btn:hover {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.7);
+}
+
+.roll-btn:active {
+  box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.8);
+}
+
+.info {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  margin: 0;
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #2B283A;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.instructions {
+  margin: 0 50px 0 50px;
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 1.7rem;
+  color: #4A4E74;
+  text-align: center;
 }
