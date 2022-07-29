@@ -1,0 +1,237 @@
+[06:02:13.811] Global cache location '/home/hamza/.cache/typescript/4.7', safe file path '/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/typingSafeList.json', types map path /home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/typesMap.json
+[06:02:13.821] Processing cache location '/home/hamza/.cache/typescript/4.7'
+[06:02:13.821] Trying to find '/home/hamza/.cache/typescript/4.7/package.json'...
+[06:02:13.895] Loaded content of '/home/hamza/.cache/typescript/4.7/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.602"},"devDependencies":{"@types/babel__core":"^7.1.19","@types/babel__preset-env":"^7.9.2","@types/react":"^18.0.15","@types/react-dom":"^18.0.6"}}
+[06:02:13.895] Loaded content of '/home/hamza/.cache/typescript/4.7/package-lock.json'
+[06:02:13.932] Adding entry into typings cache: 'babel__core' => '/home/hamza/.cache/typescript/4.7/node_modules/@types/babel__core/index.d.ts'
+[06:02:13.946] Adding entry into typings cache: 'babel__preset-env' => '/home/hamza/.cache/typescript/4.7/node_modules/@types/babel__preset-env/index.d.ts'
+[06:02:13.987] Adding entry into typings cache: 'react' => '/home/hamza/.cache/typescript/4.7/node_modules/@types/react/index.d.ts'
+[06:02:14.010] Adding entry into typings cache: 'react-dom' => '/home/hamza/.cache/typescript/4.7/node_modules/@types/react-dom/index.d.ts'
+[06:02:14.010] Finished processing cache location '/home/hamza/.cache/typescript/4.7'
+[06:02:14.010] Process id: 1746
+[06:02:14.010] NPM location: /usr/bin/npm (explicit '--npmLocation' not  provided)
+[06:02:14.011] validateDefaultNpmLocation: false
+[06:02:14.011] Npm config file: /home/hamza/.cache/typescript/4.7/package.json
+[06:02:14.011] Updating types-registry npm package...
+[06:02:14.011] Exec: /usr/bin/npm install --ignore-scripts types-registry@latest
+[06:02:15.402]     Succeeded. stdout:
+    
+    up to date, audited 16 packages in 891ms
+
+found 0 vulnerabilities
+
+[06:02:15.402] Updated types-registry npm package
+[06:02:19.333] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es5.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2016.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.dom.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.dom.iterable.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.scripthost.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.core.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.generator.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.iterable.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.promise.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.proxy.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.reflect.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.symbol.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2016.array.include.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2016.full.d.ts","/home/hamza/dev/react/tenzies/src/components/die.jsx","/home/hamza/dev/react/tenzies/src/components/stopwatch.jsx","/home/hamza/dev/react/tenzies/src/App.js"],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/hamza/dev/react/tenzies/src","kind":"discover"}
+[06:02:19.348] Loaded safelist from types map file '/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/typesMap.json'
+[06:02:19.348] Explicitly included types: []
+[06:02:19.349] Inferred 'react' typings due to presence of '.jsx' extension
+[06:02:19.349] Inferred typings from unresolved imports: []
+[06:02:19.349] Result: {"cachedTypingPaths":["/home/hamza/.cache/typescript/4.7/node_modules/@types/react/index.d.ts"],"newTypingNames":[],"filesToWatch":["/home/hamza/dev/react/tenzies/src/components/bower_components","/home/hamza/dev/react/tenzies/src/components/node_modules","/home/hamza/dev/react/tenzies/src/bower_components","/home/hamza/dev/react/tenzies/src/node_modules"]}
+[06:02:19.349] Finished typings discovery: {"cachedTypingPaths":["/home/hamza/.cache/typescript/4.7/node_modules/@types/react/index.d.ts"],"newTypingNames":[],"filesToWatch":["/home/hamza/dev/react/tenzies/src/components/bower_components","/home/hamza/dev/react/tenzies/src/components/node_modules","/home/hamza/dev/react/tenzies/src/bower_components","/home/hamza/dev/react/tenzies/src/node_modules"]}
+[06:02:19.349] DirectoryWatcher:: Added:: WatchInfo: /home/hamza/dev/react/tenzies/src/components
+[06:02:19.350] DirectoryWatcher:: Added:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:02:19.351] Elapsed:: 0.8312990000122227ms DirectoryWatcher:: Added:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:02:19.351] DirectoryWatcher:: Added:: WatchInfo: /home/hamza/dev/react/tenzies/src/bower_components
+[06:02:19.351] DirectoryWatcher:: Added:: WatchInfo: /home/hamza/dev/react/tenzies/src/bower_components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:02:19.351] Elapsed:: 0.5038250000070548ms DirectoryWatcher:: Added:: WatchInfo: /home/hamza/dev/react/tenzies/src/bower_components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:02:19.351] DirectoryWatcher:: Added:: WatchInfo: /home/hamza/dev/react/tenzies/src/node_modules
+[06:02:19.351] DirectoryWatcher:: Added:: WatchInfo: /home/hamza/dev/react/tenzies/src/node_modules 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:02:19.352] Elapsed:: 0.08171300000685733ms DirectoryWatcher:: Added:: WatchInfo: /home/hamza/dev/react/tenzies/src/node_modules 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:02:19.352] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":["/home/hamza/.cache/typescript/4.7/node_modules/@types/react/index.d.ts"],"unresolvedImports":[],"kind":"action::set"}
+[06:02:19.352] Response has been sent.
+[06:02:19.352] No new typings were requested as a result of typings discovery
+[06:02:19.824] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es5.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2016.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.dom.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.dom.iterable.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.scripthost.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.core.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.generator.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.iterable.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.promise.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.proxy.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.reflect.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.symbol.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2016.array.include.d.ts","/home/hamza/.emacs.d/var/lsp/server/npm/typescript/lib/node_modules/typescript/lib/lib.es2016.full.d.ts","/home/hamza/dev/react/tenzies/src/components/die.jsx","/home/hamza/dev/react/tenzies/src/components/stopwatch.jsx","/home/hamza/dev/react/tenzies/src/App.js","/home/hamza/.cache/typescript/4.7/node_modules/@types/react/global.d.ts","/home/hamza/.cache/typescript/4.7/node_modules/@types/react/index.d.ts"],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/hamza/dev/react/tenzies/src","kind":"discover"}
+[06:02:19.824] Explicitly included types: []
+[06:02:19.824] Inferred 'react' typings due to presence of '.jsx' extension
+[06:02:19.825] Inferred typings from unresolved imports: []
+[06:02:19.825] Result: {"cachedTypingPaths":["/home/hamza/.cache/typescript/4.7/node_modules/@types/react/index.d.ts"],"newTypingNames":[],"filesToWatch":["/home/hamza/dev/react/tenzies/src/components/bower_components","/home/hamza/dev/react/tenzies/src/components/node_modules","/home/hamza/dev/react/tenzies/src/bower_components","/home/hamza/dev/react/tenzies/src/node_modules"]}
+[06:02:19.825] Finished typings discovery: {"cachedTypingPaths":["/home/hamza/.cache/typescript/4.7/node_modules/@types/react/index.d.ts"],"newTypingNames":[],"filesToWatch":["/home/hamza/dev/react/tenzies/src/components/bower_components","/home/hamza/dev/react/tenzies/src/components/node_modules","/home/hamza/dev/react/tenzies/src/bower_components","/home/hamza/dev/react/tenzies/src/node_modules"]}
+[06:02:19.825] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":["/home/hamza/.cache/typescript/4.7/node_modules/@types/react/index.d.ts"],"unresolvedImports":[],"kind":"action::set"}
+[06:02:19.825] Response has been sent.
+[06:02:19.825] No new typings were requested as a result of typings discovery
+[06:03:10.863] sysLog:: onTimerToUpdateChildWatches:: 1
+[06:03:10.864] sysLog:: invokingWatchers:: Elapsed:: 0.4604430000035791ms:: 0
+[06:03:10.864] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/stopwatch.jsx 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:03:10.865] Elapsed:: 0.1778539999941131ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/stopwatch.jsx 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:03:10.865] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/stopwatch.jsx 1:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:03:10.865] Elapsed:: 0.029746000000159256ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/stopwatch.jsx 1:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:03:10.865] sysLog:: Elapsed:: 1.6970429999928456ms:: onTimerToUpdateChildWatches:: 0 undefined
+[06:11:52.658] sysLog:: onTimerToUpdateChildWatches:: 1
+[06:11:52.658] sysLog:: invokingWatchers:: Elapsed:: 0.24732399999629706ms:: 0
+[06:11:52.658] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:11:52.658] Elapsed:: 0.017493000021204352ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:11:52.658] sysLog:: Elapsed:: 0.4655329999513924ms:: onTimerToUpdateChildWatches:: 0 undefined
+[06:11:56.736] sysLog:: onTimerToUpdateChildWatches:: 1
+[06:11:56.736] sysLog:: invokingWatchers:: Elapsed:: 0.28886199998669326ms:: 0
+[06:11:56.737] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:11:56.737] Elapsed:: 0.022471999982371926ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:11:56.737] sysLog:: Elapsed:: 0.5481179999187589ms:: onTimerToUpdateChildWatches:: 0 undefined
+[06:14:11.662] sysLog:: onTimerToUpdateChildWatches:: 1
+[06:14:11.663] sysLog:: invokingWatchers:: Elapsed:: 0.1523749999469146ms:: 0
+[06:14:11.663] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:14:11.663] Elapsed:: 0.028713999898172915ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:14:11.663] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 1:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:14:11.663] Elapsed:: 0.0067919999128207564ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 1:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:14:11.663] sysLog:: Elapsed:: 0.589534999919124ms:: onTimerToUpdateChildWatches:: 0 undefined
+[06:16:15.958] sysLog:: onTimerToUpdateChildWatches:: 1
+[06:16:15.959] sysLog:: invokingWatchers:: Elapsed:: 0.3048319999361411ms:: 0
+[06:16:15.959] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:16:15.959] Elapsed:: 0.02575899998191744ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:16:15.959] sysLog:: Elapsed:: 0.8535209998954087ms:: onTimerToUpdateChildWatches:: 0 undefined
+[06:16:46.928] sysLog:: onTimerToUpdateChildWatches:: 1
+[06:16:46.928] sysLog:: invokingWatchers:: Elapsed:: 0.460103000048548ms:: 0
+[06:16:46.928] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:16:46.928] Elapsed:: 0.030556999961845577ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:16:46.929] sysLog:: Elapsed:: 0.77835999999661ms:: onTimerToUpdateChildWatches:: 0 undefined
+[06:17:33.803] sysLog:: onTimerToUpdateChildWatches:: 1
+[06:17:33.804] sysLog:: invokingWatchers:: Elapsed:: 0.3650350000243634ms:: 0
+[06:17:33.804] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:17:33.804] Elapsed:: 0.020758999977260828ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:17:33.804] sysLog:: Elapsed:: 0.8079160000197589ms:: onTimerToUpdateChildWatches:: 0 undefined
+[06:17:39.172] sysLog:: onTimerToUpdateChildWatches:: 1
+[06:17:39.173] sysLog:: invokingWatchers:: Elapsed:: 0.46014300000388175ms:: 0
+[06:17:39.173] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:17:39.173] Elapsed:: 0.048941000015474856ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:17:39.173] sysLog:: Elapsed:: 0.7216740000294521ms:: onTimerToUpdateChildWatches:: 0 undefined
+[06:39:53.430] sysLog:: onTimerToUpdateChildWatches:: 1
+[06:39:53.430] sysLog:: invokingWatchers:: Elapsed:: 0.39945900021120906ms:: 0
+[06:39:53.430] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:39:53.430] Elapsed:: 0.026138999965041876ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:39:53.431] sysLog:: Elapsed:: 0.8445840002968907ms:: onTimerToUpdateChildWatches:: 0 undefined
+[06:41:51.469] sysLog:: onTimerToUpdateChildWatches:: 1
+[06:41:51.470] sysLog:: invokingWatchers:: Elapsed:: 0.2033520000986755ms:: 0
+[06:41:51.470] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:41:51.470] Elapsed:: 0.023163000121712685ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:41:51.470] sysLog:: Elapsed:: 0.43608800042420626ms:: onTimerToUpdateChildWatches:: 0 undefined
+[06:44:27.671] sysLog:: onTimerToUpdateChildWatches:: 1
+[06:44:27.671] sysLog:: invokingWatchers:: Elapsed:: 0.5232110000215471ms:: 0
+[06:44:27.672] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:44:27.672] Elapsed:: 0.021600000094622374ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:44:27.672] sysLog:: Elapsed:: 0.7751739998348057ms:: onTimerToUpdateChildWatches:: 0 undefined
+[06:44:33.971] sysLog:: onTimerToUpdateChildWatches:: 1
+[06:44:33.972] sysLog:: invokingWatchers:: Elapsed:: 0.13723700027912855ms:: 0
+[06:44:33.972] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:44:33.972] Elapsed:: 0.01774300029501319ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#stopwatch.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[06:44:33.972] sysLog:: Elapsed:: 0.32101200008764863ms:: onTimerToUpdateChildWatches:: 0 undefined
+[07:57:33.774] sysLog:: onTimerToUpdateChildWatches:: 1
+[07:57:33.775] sysLog:: invokingWatchers:: Elapsed:: 0.3053029999136925ms:: 0
+[07:57:33.775] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[07:57:33.775] Elapsed:: 0.012583999894559383ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[07:57:33.775] sysLog:: Elapsed:: 0.4626280004158616ms:: onTimerToUpdateChildWatches:: 0 undefined
+[07:57:35.584] sysLog:: onTimerToUpdateChildWatches:: 1
+[07:57:35.585] sysLog:: invokingWatchers:: Elapsed:: 0.19492499995976686ms:: 0
+[07:57:35.585] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[07:57:35.585] Elapsed:: 0.020898999646306038ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[07:57:35.585] sysLog:: Elapsed:: 0.38798699993640184ms:: onTimerToUpdateChildWatches:: 0 undefined
+[08:02:17.633] sysLog:: onTimerToUpdateChildWatches:: 1
+[08:02:17.633] sysLog:: invokingWatchers:: Elapsed:: 0.09047900047153234ms:: 0
+[08:02:17.633] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[08:02:17.633] Elapsed:: 0.017091999761760235ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[08:02:17.633] sysLog:: Elapsed:: 0.1926309997215867ms:: onTimerToUpdateChildWatches:: 0 undefined
+[08:02:19.580] sysLog:: onTimerToUpdateChildWatches:: 1
+[08:02:19.580] sysLog:: invokingWatchers:: Elapsed:: 0.1375179998576641ms:: 0
+[08:02:19.581] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[08:02:19.581] Elapsed:: 0.019737000577151775ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[08:02:19.581] sysLog:: Elapsed:: 0.3439949993044138ms:: onTimerToUpdateChildWatches:: 0 undefined
+[08:10:15.081] sysLog:: onTimerToUpdateChildWatches:: 1
+[08:10:15.082] sysLog:: invokingWatchers:: Elapsed:: 0.22825799975544214ms:: 0
+[08:10:15.082] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[08:10:15.082] Elapsed:: 0.0205680001527071ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[08:10:15.082] sysLog:: Elapsed:: 0.41837500035762787ms:: onTimerToUpdateChildWatches:: 0 undefined
+[08:11:48.504] sysLog:: onTimerToUpdateChildWatches:: 1
+[08:11:48.505] sysLog:: invokingWatchers:: Elapsed:: 0.19957400020211935ms:: 0
+[08:11:48.505] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[08:11:48.505] Elapsed:: 0.0305570000782609ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[08:11:48.505] sysLog:: Elapsed:: 0.6324760001152754ms:: onTimerToUpdateChildWatches:: 0 undefined
+[08:54:54.974] sysLog:: onTimerToUpdateChildWatches:: 1
+[08:54:54.975] sysLog:: invokingWatchers:: Elapsed:: 0.24846599996089935ms:: 0
+[08:54:54.975] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[08:54:54.975] Elapsed:: 0.021299999207258224ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[08:54:54.975] sysLog:: Elapsed:: 0.4385829996317625ms:: onTimerToUpdateChildWatches:: 0 undefined
+[08:55:22.131] sysLog:: onTimerToUpdateChildWatches:: 1
+[08:55:22.132] sysLog:: invokingWatchers:: Elapsed:: 0.14516199938952923ms:: 0
+[08:55:22.132] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[08:55:22.132] Elapsed:: 0.02346399985253811ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[08:55:22.132] sysLog:: Elapsed:: 0.3464400004595518ms:: onTimerToUpdateChildWatches:: 0 undefined
+[09:04:47.755] sysLog:: onTimerToUpdateChildWatches:: 1
+[09:04:47.756] sysLog:: invokingWatchers:: Elapsed:: 0.23542200028896332ms:: 0
+[09:04:47.756] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:04:47.756] Elapsed:: 0.022322000935673714ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:04:47.756] sysLog:: Elapsed:: 0.5433189999312162ms:: onTimerToUpdateChildWatches:: 0 undefined
+[09:05:10.814] sysLog:: onTimerToUpdateChildWatches:: 1
+[09:05:10.815] sysLog:: invokingWatchers:: Elapsed:: 0.16333699971437454ms:: 0
+[09:05:10.815] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:05:10.815] Elapsed:: 0.02312299981713295ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:05:10.815] sysLog:: Elapsed:: 0.3533229995518923ms:: onTimerToUpdateChildWatches:: 0 undefined
+[09:07:43.316] sysLog:: onTimerToUpdateChildWatches:: 1
+[09:07:43.317] sysLog:: invokingWatchers:: Elapsed:: 0.20824999921023846ms:: 0
+[09:07:43.317] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:07:43.317] Elapsed:: 0.031870000064373016ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:07:43.317] sysLog:: Elapsed:: 0.4817730002105236ms:: onTimerToUpdateChildWatches:: 0 undefined
+[09:07:58.862] sysLog:: onTimerToUpdateChildWatches:: 1
+[09:07:58.862] sysLog:: invokingWatchers:: Elapsed:: 0.13817999884486198ms:: 0
+[09:07:58.862] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:07:58.862] Elapsed:: 0.033632999286055565ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:07:58.862] sysLog:: Elapsed:: 0.3429739996790886ms:: onTimerToUpdateChildWatches:: 0 undefined
+[09:18:55.224] sysLog:: onTimerToUpdateChildWatches:: 1
+[09:18:55.224] sysLog:: invokingWatchers:: Elapsed:: 0.23379900120198727ms:: 0
+[09:18:55.224] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:18:55.224] Elapsed:: 0.029875999316573143ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:18:55.225] sysLog:: Elapsed:: 0.8058209996670485ms:: onTimerToUpdateChildWatches:: 0 undefined
+[09:19:01.525] sysLog:: onTimerToUpdateChildWatches:: 1
+[09:19:01.525] sysLog:: invokingWatchers:: Elapsed:: 0.08085200004279613ms:: 0
+[09:19:01.525] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:19:01.525] Elapsed:: 0.016722001135349274ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:19:01.525] sysLog:: Elapsed:: 0.18617000058293343ms:: onTimerToUpdateChildWatches:: 0 undefined
+[09:21:20.353] sysLog:: onTimerToUpdateChildWatches:: 1
+[09:21:20.353] sysLog:: invokingWatchers:: Elapsed:: 0.1613529995083809ms:: 0
+[09:21:20.353] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:21:20.353] Elapsed:: 0.017974000424146652ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:21:20.353] sysLog:: Elapsed:: 0.2885909993201494ms:: onTimerToUpdateChildWatches:: 0 undefined
+[09:23:02.999] sysLog:: onTimerToUpdateChildWatches:: 1
+[09:23:02.999] sysLog:: invokingWatchers:: Elapsed:: 0.18592899851500988ms:: 0
+[09:23:02.999] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:23:02.999] Elapsed:: 0.021980999037623405ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:23:03.000] sysLog:: Elapsed:: 0.3704649992287159ms:: onTimerToUpdateChildWatches:: 0 undefined
+[09:27:44.627] sysLog:: onTimerToUpdateChildWatches:: 1
+[09:27:44.627] sysLog:: invokingWatchers:: Elapsed:: 0.407735001295805ms:: 0
+[09:27:44.627] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:27:44.628] Elapsed:: 0.01812399923801422ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:27:44.628] sysLog:: Elapsed:: 0.7341569997370243ms:: onTimerToUpdateChildWatches:: 0 undefined
+[09:28:02.312] sysLog:: onTimerToUpdateChildWatches:: 1
+[09:28:02.312] sysLog:: invokingWatchers:: Elapsed:: 0.15071200020611286ms:: 0
+[09:28:02.312] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:28:02.312] Elapsed:: 0.022381998598575592ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:28:02.312] sysLog:: Elapsed:: 0.34828300029039383ms:: onTimerToUpdateChildWatches:: 0 undefined
+[09:34:52.046] sysLog:: onTimerToUpdateChildWatches:: 1
+[09:34:52.047] sysLog:: invokingWatchers:: Elapsed:: 0.2112670000642538ms:: 0
+[09:34:52.047] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:34:52.047] Elapsed:: 0.018854999914765358ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:34:52.047] sysLog:: Elapsed:: 0.41347600147128105ms:: onTimerToUpdateChildWatches:: 0 undefined
+[09:36:07.672] sysLog:: onTimerToUpdateChildWatches:: 1
+[09:36:07.672] sysLog:: invokingWatchers:: Elapsed:: 0.20926300063729286ms:: 0
+[09:36:07.672] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:36:07.673] Elapsed:: 0.0462459996342659ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:36:07.673] sysLog:: Elapsed:: 0.5585079994052649ms:: onTimerToUpdateChildWatches:: 0 undefined
+[09:39:40.233] sysLog:: onTimerToUpdateChildWatches:: 1
+[09:39:40.234] sysLog:: invokingWatchers:: Elapsed:: 0.21198699995875359ms:: 0
+[09:39:40.234] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:39:40.234] Elapsed:: 0.017222000285983086ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:39:40.234] sysLog:: Elapsed:: 0.40042100101709366ms:: onTimerToUpdateChildWatches:: 0 undefined
+[09:39:42.327] sysLog:: onTimerToUpdateChildWatches:: 1
+[09:39:42.327] sysLog:: invokingWatchers:: Elapsed:: 0.13487299904227257ms:: 0
+[09:39:42.327] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:39:42.327] Elapsed:: 0.03357299976050854ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:39:42.327] sysLog:: Elapsed:: 0.41313499957323074ms:: onTimerToUpdateChildWatches:: 0 undefined
+[09:46:06.372] sysLog:: onTimerToUpdateChildWatches:: 1
+[09:46:06.373] sysLog:: invokingWatchers:: Elapsed:: 0.2580239996314049ms:: 0
+[09:46:06.373] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:46:06.373] Elapsed:: 0.04641699977219105ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:46:06.373] sysLog:: Elapsed:: 0.6229889988899231ms:: onTimerToUpdateChildWatches:: 0 undefined
+[09:46:20.745] sysLog:: onTimerToUpdateChildWatches:: 1
+[09:46:20.745] sysLog:: invokingWatchers:: Elapsed:: 0.16566000133752823ms:: 0
+[09:46:20.745] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:46:20.745] Elapsed:: 0.03598699904978275ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:46:20.746] sysLog:: Elapsed:: 0.6694450005888939ms:: onTimerToUpdateChildWatches:: 0 undefined

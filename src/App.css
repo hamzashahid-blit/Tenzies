@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Roboto+Mono:wght@300;400&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -12,9 +13,9 @@ body {
 }
 
 .app {
-  padding: 30px;
+  padding: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   position: absolute;
@@ -25,38 +26,75 @@ body {
   width: 85%;
   max-width: 800px;
   max-height: 800px;
+  min-width: 550px;
+  min-height: 550px;
   background-color: #F5F5F5;
   border-radius: 20px;
   box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.25);
 }
 
 .dice {
+  margin-bottom: 30px;
   display: grid;
   grid: auto auto / repeat(5, 1fr);
   gap: 35px;
 }
 
+/* .die--number {
+   font-weight: bold;
+   font-size: 3rem;
+   color: #2B283A;
+   }
+ */
+
 .die {
-  display: flex;
+  padding: 8px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  grid-template-areas:
+	"a . c"
+	"e g f"
+	"d . b";
   justify-content: center;
-  align-items: center;
-  width: 75px;
-  height: 75px;
+  gap: 8px;
   border-radius: 8px;
   box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 25%);
   cursor: pointer;
   user-select: none;
 }
 
-.die--number {
-  font-weight: bold;
-  font-size: 3rem;
-  /* color: #2B283A; */
+.pip {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
 }
 
+.pip:nth-child(1) {
+  grid-area: a;
+}
+.pip:nth-child(2) {
+  grid-area: b;
+}
+.pip:nth-child(3) {
+  grid-area: c;
+}
+.pip:nth-child(4) {
+  grid-area: d;
+}
+.pip:nth-child(5) {
+  grid-area: e;
+}
+.pip:nth-child(6) {
+  grid-area: f;
+}
+
+.pip:nth-child(odd):last-child {
+  grid-area: g;
+}
 
 .roll-btn {
-  margin-bottom: 40px;
+  /* margin-bottom: auto; */
   padding: 12px 60px 12px 60px;
   font-family: Karla, sans-serif;
   font-weight: bold;
@@ -74,11 +112,14 @@ body {
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.7);
 }
 
+
 .roll-btn:active {
   box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.8);
 }
 
 .info {
+  /* margin-top: 50px; */
+  margin-bottom: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,9 +135,32 @@ body {
 
 .instructions {
   margin: 0 50px 0 50px;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-weight: normal;
   font-size: 1.7rem;
   color: #4A4E74;
   text-align: center;
+}
+
+.stopwatches {
+  margin-bottom: 10px;
+}
+
+.personal-best {
+  margin-right: 8px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .app {
+	aspect-ratio: unset;
+  }
+  .info {
+	margin-bottom: 20px;
+  }
+  .roll-btn {
+	margin-bottom: 30px;
+  }
 }

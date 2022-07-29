@@ -7,52 +7,43 @@ import Confetti from "react-confetti";
 function App() {
   const [dice, setDice] = React.useState(allNewDice());
   const [tenzies, setTenzies] = React.useState(false);
+  const [stopwatch, setStopwatch] = React.useState(newStopwatch());
   const [firstGame, setFirstGame] = React.useState(true);
-  const [personalBest, setPersonalBest] = React.useState(
-    localStorage.getItem("personalBest")
-  );
-  const [stopwatch, setStopwatch] = React.useState({
-    startTime: 0,
-    elapsedTime: 0,
-    paused: true,
-  });
+
+  const stopStopwatch = React.useCallback(() => {
+    console.log("Trying to bypass...");
+    if (!stopwatch.paused) {
+      console.log("Stopping...");
+      setStopwatch((oldWatch) => {
+        clearInterval(oldWatch.intervalId);
+        return {
+          ...oldWatch,
+          paused: true,
+          intervalId: null,
+        };
+      });
+    }
+  }, [stopwatch]);
 
   // Winning the game
   React.useEffect(() => {
     setTenzies(() => {
       let firstValue = dice[0].number;
       for (let die of dice) {
-        if (!die.isHeld || die.number !== firstValue) {
+        if (
+          !die.isHeld // || die.number !== firstValue
+        ) {
           return false;
         }
       }
+
       stopStopwatch();
-      if (!personalBest || stopwatch.elapsedTime < personalBest) {
-        localStorage.setItem("personalBest", stopwatch.elapsedTime);
-        setPersonalBest(stopwatch.elapsedTime);
-      }
+      console.log("Congrats, you won!");
+      if (stopwatch.elapsedTime < localStorage.getItem("highScore"))
+        localStorage.setItem("highScore", stopwatch.elapsedTime);
       return true;
     });
-  }, [dice, personalBest, stopwatch.elapsedTime]);
-
-  // Update Stopwatch
-  React.useEffect(() => {
-    let intervalId = null;
-    if (!stopwatch.paused) {
-      intervalId = setInterval(() => {
-        setStopwatch((prevWatch) => {
-          return {
-            ...prevWatch,
-            elapsedTime: Date.now() - prevWatch.startTime,
-          };
-        });
-      }, 1);
-    } else {
-      clearInterval(intervalId);
-    }
-    // Avoid memory leaks when user leaves the page
-    return () => clearInterval(intervalId);
-  }, [stopwatch]);
+  }, [dice, stopwatch, stopStopwatch, setStopwatch]);
 
   function allNewDice() {
     let newDice = [];
@@ -88,6 +79,45 @@ function App() {
     });
   }
 
+  function newStopwatch() {
+    return {
+      startTime: 0,
+      elapsedTime: 0,
+      paused: true,
+      intervalId: null,
+    };
+  }
+
+  function startStopwatch() {
+    if (stopwatch.paused) {
+      setStopwatch((oldWatch) => {
+        return {
+          ...oldWatch,
+          startTime: Date.now() - oldWatch.elapsedTime,
+          paused: false,
+          intervalId: setInterval(updateStopwatch, 10),
+        };
+      });
+    }
+  }
+
+  function updateStopwatch() {
+    setStopwatch((oldWatch) => {
+      return {
+        ...oldWatch,
+        elapsedTime: Date.now() - oldWatch.startTime,
+      };
+    });
+    clearInterval(stopwatch.intervalId);
+  }
+
+  function resetStopwatch() {
+    setStopwatch(() => {
+      stopStopwatch();
+      return newStopwatch();
+    });
+  }
+
   function newGame() {
     setFirstGame(false);
     setDice(allNewDice());
@@ -106,35 +136,6 @@ function App() {
     );
   });
 
-  function startStopwatch() {
-    setStopwatch((prevWatch) => {
-      return {
-        ...prevWatch,
-        startTime: Date.now() - prevWatch.elapsedTime,
-        paused: false,
-      };
-    });
-  }
-
-  function stopStopwatch() {
-    setStopwatch((prevWatch) => {
-      return {
-        ...prevWatch,
-        paused: true,
-      };
-    });
-  }
-
-  function resetStopwatch() {
-    setStopwatch(() => {
-      return {
-        startTime: 0,
-        elapsedTime: 0,
-        paused: true,
-      };
-    });
-  }
-
   return (
     <>
       <main className="app">
@@ -145,14 +146,10 @@ function App() {
             current value between rolls.
           </p>
         </div>
-        <div className="stopwatches">
-          <Stopwatch time={stopwatch.elapsedTime} personalBest={false} />
-          <div className="personal-best">
-            <h2>🌟</h2>
-            <Stopwatch time={personalBest} personalBest={true} />
-          </div>
-        </div>
+        <Stopwatch stopwatch={stopwatch} />
         <div className="dice">{diceElements}</div>
+        <button onClick={stopStopwatch}>Hey</button>
+        <button onClick={console.log(stopwatch)}>do</button>
         <button
           className="roll-btn"
           onClick={firstGame || tenzies ? newGame : rollDice}
