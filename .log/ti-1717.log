@@ -235,3 +235,10 @@ found 0 vulnerabilities
 [09:46:20.745] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
 [09:46:20.745] Elapsed:: 0.03598699904978275ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/#die.jsx# 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
 [09:46:20.746] sysLog:: Elapsed:: 0.6694450005888939ms:: onTimerToUpdateChildWatches:: 0 undefined
+[09:58:15.852] sysLog:: onTimerToUpdateChildWatches:: 1
+[09:58:15.852] sysLog:: invokingWatchers:: Elapsed:: 0.1937830001115799ms:: 0
+[09:58:15.852] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/die.jsx 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:58:15.852] Elapsed:: 0.025648999959230423ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/die.jsx 0:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:58:15.852] DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/die.jsx 1:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:58:15.852] Elapsed:: 0.007674999535083771ms DirectoryWatcher:: Triggered with /home/hamza/dev/react/tenzies/src/components/die.jsx 1:: WatchInfo: /home/hamza/dev/react/tenzies/src/components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[09:58:15.852] sysLog:: Elapsed:: 0.57846499979496ms:: onTimerToUpdateChildWatches:: 0 undefined
