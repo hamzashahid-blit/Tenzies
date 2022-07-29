@@ -6,8 +6,6 @@ Here is a preview of what my app looks like:
 [[file:src/assets/normal-app-preview.png]]
 [[file:src/assets/winning-app-preview.png]]
 
-I built this completely on my own but took reference from this [[https://www.youtube.com/watch?v=bMknfKXIFA8][react course]].
-
 This project was bootstrapped with [[https://github.com/facebook/create-react-app][Create React App]].
 
 ** Available Scripts
